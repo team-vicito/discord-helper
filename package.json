@@ -1,0 +1,22 @@
+{
+  "name": "discord-helper",
+  "version": "1.0.0",
+  "description": "Discord bot",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/team-vicito/discord-helper.git"
+  },
+  "author": "David Penkowoj",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/team-vicito/discord-helper/issues"
+  },
+  "homepage": "https://vicito.de/",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}

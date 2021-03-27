@@ -2,6 +2,7 @@ require('dotenv').config();
 const discord = require("discord.js");
 const client = new discord.Client();
 
+require("./functions/scheduler")(client);
 const polls = require("./functions/polls");
 const fun = require("./functions/fun");
 

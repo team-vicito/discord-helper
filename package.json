@@ -19,7 +19,8 @@
   "homepage": "https://vicito.de/",
   "dependencies": {
     "discord.js": "^12.5.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "node-schedule": "^2.0.0"
   },
   "engines": {
     "node": "15.11.0",

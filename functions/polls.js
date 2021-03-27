@@ -31,9 +31,9 @@ const createPoll = (client, msg) => {
   const choices = generateChoices(args);
 
   const embed = new discord.MessageEmbed()
-    .setColor("#EB3B5A")
+    .setColor("#E5183E")
     .setTitle(args[1])
-    .setAuthor(msg.author.username, msg.author.defaultAvatarURL)
+    .setAuthor(msg.author.username, msg.author.avatarURL())
     .addFields(choices)
     .setTimestamp();
 

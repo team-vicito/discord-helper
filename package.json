@@ -4,7 +4,8 @@
   "description": "Discord bot",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+    "test": "node app.js debug",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,11 @@
   },
   "homepage": "https://vicito.de/",
   "dependencies": {
-    "discord.js": "^12.5.1"
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0"
+  },
+  "engines": {
+    "node": "15.11.0",
+    "npm": "7.6.3"
   }
 }

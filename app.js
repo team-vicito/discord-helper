@@ -1,8 +1,6 @@
+require('dotenv').config(); 
 const discord = require("discord.js");
 const client = new discord.Client();
-
-const token = require("./token");
-const prefix = "!"
 
 const polls = require("./functions/polls");
 const fun = require("./functions/fun");
@@ -17,11 +15,11 @@ client.on("ready", () => {
 });
 
 client.on("message", (msg) => {
-  if (msg.author.bot || !msg.channel.type == "text" || !msg.content.startsWith(prefix)) return;
+  if (msg.author.bot || !msg.channel.type == "text" || !msg.content.startsWith(process.env.PREFIX)) return;
 
   const command = msg.content.toLowerCase().substring(1, msg.content.length).split(" ")[0];
 
   if (commands[command]) commands[command](client, msg);
 });
 
-client.login(token);
+client.login();
